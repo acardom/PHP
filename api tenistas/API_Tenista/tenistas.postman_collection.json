@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "45d395ff-0e35-4f14-bdb8-85eb0e7ec200",
+		"name": "tenistas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26000845"
+	},
+	"item": [
+		{
+			"name": "Modificar suelo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"nombre\": \"suelo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/php/tenistas_api/API_Tenista/superficie.php?=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php",
+						"tenistas_api",
+						"API_Tenista",
+						"superficie.php"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listado Tenistas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/php/tenistas_api/API_Tenista/tenistas.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php",
+						"tenistas_api",
+						"API_Tenista",
+						"tenistas.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Tenista",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/php/tenistas_api/API_Tenista/tenistas.php?id=190",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php",
+						"tenistas_api",
+						"API_Tenista",
+						"tenistas.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "190"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insertar itulos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tenista_id\":1,\r\n    \"torneo_id\":1,\r\n    \"anno\":2024   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/php/tenistas_api/API_Tenista/titulos.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php",
+						"tenistas_api",
+						"API_Tenista",
+						"titulos.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
