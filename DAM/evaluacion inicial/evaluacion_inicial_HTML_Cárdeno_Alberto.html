@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluacion inicial</title>
+</head>
+<body>
+    <form action="" method="post">
+        <h1>Datos Personales</h1>
+
+        <label for="Name">Nombre:</label>
+        <input type="text" id="Name" name="Name" /><br/>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" /><br/>
+        <label for="clave">Clave:</label>
+        <input type="text" id="clave" name="clave" /><br/><br/><br/><br/>
+
+
+        <legend>Please select your preferred contact method:</legend><br/>
+
+        <div>
+        <input type="radio" id="Primavera" name="estacion" value="email" />
+        <label for="Primavera">Primavera</label>
+
+        <input type="radio" id="Verano" name="estacion" value="phone" />
+        <label for="Verano">Verano</label>
+
+        <input type="radio" id="Otoño" name="estacion" value="mail" />
+        <label for="Otoño">Otoño</label>
+
+        <input type="radio" id="Invierno" name="estacion" value="mail" />
+        <label for="Invierno">Invierno</label>
+        </div><br/><br/>
+
+        <label for="Transporte">Medio de transporte:</label><br/><br/>
+        <select name="Transporte" id="Transporte">
+            <option value="" disabled selected="true">seleccione transporte</option>
+            <option value="Bus">Bus</option>
+            <option value="Coche">Coche</option>
+            <option value="Moto">Moto</option>
+        </select>
+
+        <br/><br/><br/>
+
+        <legend>Aficiones:</legend><br/>
+
+        <div>
+            <input type="checkbox" id="Bailar" name="Bailar" />
+            <label for="Bailar">Bailar</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Cantar" name="Cantar" />
+            <label for="Cantar">Cantar</label>
+        </div>
+        <div>
+            <div>
+                <input type="checkbox" id="deporte" name="deporte" />
+                <label for="deporte">Hacer deporte</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Leer" name="Leer" />
+                <label for="Leer">Leer</label>
+            </div>
+        </div>
+            <input type="checkbox" id="series" name="series" />
+            <label for="series">Ver series</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Viajar" name="Viajar" />
+            <label for="Viajar">Viajar</label>
+        </div>
+
+        <br/><br/><br/>
+
+        <label for="Escriba">Observaciones:</label><br/><br/>
+
+        <textarea id="Escriba" name="Escriba" rows="5" cols="33">
+        Escriba aqui.......
+        </textarea>
+
+        <br/><br/>
+
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Enviar" />
+
+
+    </form>
+</body>
+</html>
