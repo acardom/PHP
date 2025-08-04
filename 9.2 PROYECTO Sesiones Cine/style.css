@@ -1,0 +1,143 @@
+/* style.css */
+
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e3f2fd; /* Azul claro de fondo */
+    font-size: 16px;
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(to right, #42a5f5, #1e88e5); /* Azul corporativo */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1, h2, p {
+    text-align: center;
+    color: #fff;
+}
+
+/* Botones */
+button, input[type="submit"] {
+    background-color: #1e88e5; /* Azul corporativo */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Espacio entre botones */
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #42a5f5;
+}
+
+/* Listas de películas y sesiones */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #42a5f5;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #1e88e5;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input[type="checkbox"] {
+    margin: 0 10px;
+}
+
+/* Layout de asientos */
+.asientos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los asientos */
+}
+
+input[type="checkbox"] {
+    margin: 5px;
+}
+
+/* Temporizador */
+#tiempo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #42a5f5;
+}
+
+/* Alerta de tiempo */
+.alert {
+    color: #ff7e5f;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Contenedor para los botones centrados */
+ul {
+    text-align: center;  /* Asegura que los elementos de la lista estén centrados */
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los enlaces de las películas y sesiones */
+ul li a {
+    display: block;
+    background-color: #42a5f5;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 120px;
+    margin: 0 auto;  /* Centra cada botón */
+}
+
+ul li a:hover {
+    background-color: #1e88e5;
+}

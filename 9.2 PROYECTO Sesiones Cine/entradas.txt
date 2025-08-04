@@ -1,0 +1,3 @@
+Película: Torrente
+Sesión: 18:00
+Asientos: E1, E2, E3, E4, E5, E6
