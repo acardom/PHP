@@ -1,0 +1,7 @@
+{
+    "name": "alberto/prueba",
+    "description": "prueba",
+    "require": {
+        "monolog/monolog": "^3.8"
+    }
+}
